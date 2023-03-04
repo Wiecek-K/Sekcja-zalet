@@ -1,12 +1,10 @@
 .container {
-  padding: 20px 20px;
+  padding: 20px;
   @media screen and (min-width: 768px) {
-    padding: 41px;
+    padding: 42px;
   }
   @media screen and (min-width: 1222px) {
     width: 1222px;
-    padding-left: 42px;
-    padding-right: 42px;
     margin: 0 auto;
   }
 }
@@ -38,45 +36,76 @@
   &--thirdy {
     background-color: #f4f1e4;
   }
+  @media screen and (min-width: 768px) {
+    padding: 24px;
+  }
   @media screen and (min-width: 1222px) {
     width: calc((100% - (16px * 2)) / 3);
+    gap: 24px;
   }
 }
 .advantage__icon-border {
-  width: 48px;
-  height: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: fit-content;
   background-color: #428a2f;
   border-radius: 50%;
+  padding: 12px;
   &--second {
     background-color: #3d63ac;
   }
   &--thirdy {
     background-color: #b09e3d;
   }
+  @media screen and (min-width: 768px) {
+    padding: 16px;
+  }
 }
-// .advantage__icon {
-// }
+.advantage__icon {
+  width: 24px;
+  height: 24px;
+  @media screen and (min-width: 768px) {
+    width: 40px;
+    height: 40px;
+  }
+}
 .advantage__heading {
   font-weight: 700;
   font-size: 26px;
+
   line-height: 120%;
   margin-bottom: 8px;
+  @media screen and (min-width: 768px) {
+    font-size: 32px;
+  }
 }
 .advantage__description {
   font-weight: 400;
   font-size: 14px;
   line-height: 140%;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
 }
 .advantage__btn {
-  padding: 14px 19px 15px 24px;
   background-color: #fff;
+  padding: 14px 19px 15px 24px;
+  color: var(--color-on-surface);
   border-radius: 24px;
   text-decoration: none;
-  color: var(--color-on-surface);
+  letter-spacing: -3%;
   display: inline-flex;
   gap: 6px;
   width: fit-content;
+  &:hover {
+    color: #001aff;
+  }
+}
+.advantage__btn-arrow {
+  display: inline-block;
+  stroke: currentColor;
+  fill: currentColor;
+  width: 12px;
+  height: 9px;
 }

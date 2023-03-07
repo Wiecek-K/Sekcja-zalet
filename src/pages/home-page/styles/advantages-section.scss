@@ -30,6 +30,7 @@
   margin-block-start: 0;
   margin-block-end: 0;
   border-radius: 12px;
+  position: relative;
   &--second {
     background-color: #e4e9f3;
   }
@@ -84,8 +85,12 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 140%;
+  margin-bottom: calc(16px + 48px); //gap+button H
   @media screen and (min-width: 768px) {
     font-size: 16px;
+  }
+  @media screen and (min-width: 1222px) {
+    margin-bottom: calc(24px + 48px);
   }
 }
 .advantage__btn {
@@ -98,8 +103,15 @@
   display: inline-flex;
   gap: 6px;
   width: fit-content;
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
   &:hover {
     color: #001aff;
+  }
+  @media screen and (min-width: 1222px) {
+    bottom: 32px;
+    left: 32px;
   }
 }
 .advantage__btn-arrow {
